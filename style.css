@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: font;
   src:url(NeueHaasDisplayMediu.woff2);
@@ -18,8 +20,9 @@ body {
   height: 100%;
   width: 100%;
   /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; */
-  font-family: font;
+ /* font-family: "Poppins", sans-serif; */
   overflow-x: hidden;
+  font-family: font;
   scroll-behavior: smooth;
 }
 
@@ -126,7 +129,7 @@ nav ul a:hover {
   height: 36vw;
   right: 0;
   top: 80%;
-  z-index: 2;
+  z-index: 6;
 }
 
 .hero1 {
@@ -241,13 +244,13 @@ nav ul a:hover {
 }#page2{
     display: flex;
     align-items: start;
-    font-family: a;
+
     justify-content: center;
     flex-direction: column;
     height: 50vh;
     width: 100vw;
     position: relative;
-    padding-right:  4vw;
+    padding: 0vw 8vw;
 
 
 background-color: #EFEAE3;
@@ -408,7 +411,7 @@ font-size: 1vw;
   bottom: 0;
   height: 100vh;
   padding: 2vw;
-  background-color: #111827;
+  background-color: #FE340A;
   display: flex;
 
   width: 100%;
@@ -422,6 +425,7 @@ font-size: 1vw;
   z-index: 3;
 }
 .footerdiv {
+    z-index: 10;
     width: 100%;
     height: 40vh;
     /* background-color: rgb(214, 154, 125); */
@@ -432,6 +436,14 @@ font-size: 1vw;
     justify-content: space-between;
     /* margin-top: 2rem; */
 
+}
+.left li a{
+
+    color: #aeadad;
+}
+.left li {
+
+     list-style: none;
 }
 .footerbottom {
   width: 100%;
@@ -455,15 +467,15 @@ font-size: 1vw;
 
     position: absolute;
     width: 109vw;
-    height: 28vw;
-    right: 0;
-    top: 66%;
+    height: 100vh;
+    left: 0;
+    top: 0%;
 }
 
 .hero3 {
-background: linear-gradient(#fe320a, #fe3f0a);
-    height: 27vw;
-    width: 79vw;
+background: linear-gradient(#030202, #0a0909);
+    height: 159vh;
+    width: 179vw;
     border-radius: 50%;
     position: absolute;
     animation-name: anime2;
@@ -475,10 +487,10 @@ background: linear-gradient(#fe320a, #fe3f0a);
 }
 
 .hero4 {
-     background: linear-gradient(#fe320a, #fe3f0a);
-    height: 56vh;
+     background: linear-gradient(#121111, #030303);
+  height: 108vh;
     position: absolute;
-    width: 111vw;
+    width: 100vw;
     border-radius: 50%;
     filter: blur(20px);
     animation-name: anime1;
@@ -489,9 +501,9 @@ background: linear-gradient(#fe320a, #fe3f0a);
 }
 
 .hero5 {
-     background: linear-gradient(#fe320a, #fe3f0a);
-    height: 48vw;
-    width: 79vw;
+     background: linear-gradient(#121111, #030303);
+    height: 159vh;
+    width: 100vw;
     border-radius: 50%;
     position: absolute;
     animation-name: anime2;
@@ -759,9 +771,6 @@ object-fit: cover;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-  #page2{
-  padding-right:9vw
-  }
 .page3 {
           width: 100%;
         /* height: 111vh; */
@@ -810,11 +819,17 @@ object-fit: cover;
   background-color: #fe320a;
   margin: 1vw 2vw;
 }
-.page6{
-    height: 47vh;
+
+}
+@media (max-width:600px) {
+    .page6{
+    height: 55vh;
 }
 .footer{
     height: 84vh;
+}
+.footerdiv{
+    height: 37;
 }
 .circle{
     width: 40vw;
@@ -822,8 +837,6 @@ object-fit: cover;
     left: 42%;
     top: 9%;
 }
-}
-@media (max-width:600px) {
     #loader h1{
         font-size: 9vw;
 
