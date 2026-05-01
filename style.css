@@ -129,7 +129,7 @@ nav ul a:hover {
   height: 36vw;
   right: 0;
   top: 80%;
-  z-index: 6;
+  z-index: 1;
 }
 
 .hero1 {
